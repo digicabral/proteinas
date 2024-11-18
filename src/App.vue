@@ -74,7 +74,7 @@ export default {
 <style>
 @font-face {
   font-family: 'Gotham Light';
-  src: url('@/assets/fonts/GothamLight.ttf') format('truetype');
+  src: url('../src/assets/fonts/GothamLight.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

@@ -23,7 +23,7 @@ export default {
         suffix: '',
         thousands: '.',
         decimal: ',',
-        precision: 3,
+        precision: 1,
         disableNegative: true,
         disabled: false,
         min: 0,
@@ -48,7 +48,7 @@ export default {
   </header>
 
   <div class="container my-5">
-    <h1 class="text-center mb-4">Quantas gramas de proteína preciso por dia?</h1>
+    <h1 class="text-center mb-4">Quantidade de proteína diária</h1>
     <form @submit.prevent="calcularProteina">
       <div class="mb-3">
         <label for="peso" class="form-label">Insira o peso do paciente</label>
@@ -61,11 +61,11 @@ export default {
     <div class="text-center mb-4" v-if="minProteina && maxProteina">
       <br />
       <h3>
-        Proteína mínima: <b>{{ minProteina.toFixed(2) }}g</b>
+        De <b>{{ minProteina.toFixed(2) }}g</b>
       </h3>
       <br />
       <h3>
-        Proteína máxima: <b> {{ maxProteina.toFixed(2) }}g</b>
+        a <b> {{ maxProteina.toFixed(2) }}g</b>
       </h3>
     </div>
   </div>
